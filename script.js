@@ -1,0 +1,63 @@
+const puns = [
+    "I used to be a baker, but I couldn't make enough dough.",
+    "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+    "I don't trust stairs because they're always up to something.",
+    "Why did the scarecrow win an award? Because he was outstanding in his field!",
+    "I used to play piano by ear, but now I use my hands.",
+    "What do you call fake spaghetti? An impasta!",
+    "I would tell you a joke about an elevator, but it's an uplifting experience.",
+    "Why don't scientists trust atoms? Because they make up everything!",
+    "I'm reading a book on anti-gravity. It's impossible to put down!",
+    "I told my computer I needed a break, and now it won't stop sending me to the beach.",
+    "I'm on a whiskey diet. I've lost three days already.",
+    "The man who survived both mustard gas and pepper spray is a seasoned veteran.",
+    "I used to be a librarian, but I got buried under too many books.",
+    "The mathematician’s plants stopped growing. They found them square rooting.",
+    "Have you heard about the chocolate record player? It sounds pretty sweet!",
+    "I'm friends with all the trees. We're just rooting for each other.",
+    "Did you hear about the guy who invented Lifesavers? He made a mint!",
+    "Why was the math book sad? It had too many problems.",
+    "What do you call cheese that isn't yours? Nacho cheese!",
+    "I'm reading a book about anti-gravity. It's hard to put down!",
+    "What do you call a factory that makes good products? A satisfactory!",
+    "I once got into a fight with a broken elevator. I took it to another level.",
+    "I used to be a baker, but I couldn't make enough dough.",
+    "I told my computer I needed a break, and now it won't stop sending me to the beach.",
+    "What do you call an alligator in a vest? An investigator!",
+    "I'm on a whiskey diet. I've lost three days already.",
+    "The guy who invented the first wheel was an inventor, but the guy who invented the other three was a wheel dealer.",
+    "I wanted to be a doctor, but I didn't have the patients.",
+    "Why can't you hear a pterodactyl go to the bathroom? Because the 'P' is silent!",
+    "I wanted to become a professional skateboarder, but I couldn't find the right board.",
+    "I used to be a banker, but I lost interest.",
+    "The guy who invented the first wheel was an inventor, but the guy who invented the other three was a wheel dealer.",
+    "Why was the math book sad? It had too many problems.",
+    "What do you call a fish with no eyes? Fsh!",
+    "Why did the golfer bring two pairs of pants? In case he got a hole in one!",
+    "I told my wife she was drawing her eyebrows too high. She looked surprised.",
+    "What do you call a bear with no teeth? A gummy bear!",
+    "I used to play piano by ear, but now I use my hands.",
+    "I wanted to learn how to drive a stick shift, but I couldn't find a manual.",
+    "Why did the bicycle fall over? Because it was two-tired!",
+    "I'm reading a book about anti-gravity. It's impossible to put down!",
+    "What do you call a snowman with a six-pack? An abdominal snowman!",
+    "Why don't skeletons fight each other? They don't have the guts!",
+    "What do you call a cow with no legs? Ground beef!",
+    "Why do seagulls fly over the ocean? Because if they flew over the bay, they'd be bagels!",
+    "I'm on a whiskey diet. I've lost three days already.",
+    "What do you call a fish that wears a bowtie? Sofishticated!",
+    "I couldn't figure out why the baseball kept getting bigger. Then it hit me.",
+    "I used to be a baker, but I couldn't make enough dough.",
+    "The guy who invented the first wheel was an inventor, but the guy who invented the other three was a wheel dealer.",
+    "Why did the mushroom go to the party? Because he was a fungi!",
+    "I wanted to learn how to drive a stick shift, but I couldn't find a manual.",
+    "Why did the computer go to the doctor? Because it had a virus!"
+];
+
+const punDisplay = document.getElementById('punDisplay');
+const punButton = document.getElementById('punButton');
+
+punButton.addEventListener('click', () => {
+    const randomIndex = Math.floor(Math.random() * puns.length);
+    punDisplay.textContent = puns[randomIndex];
+});
